@@ -1,0 +1,69 @@
+/*formatting of labels in the address form*/
+.form-label {
+  margin: 8px 0 0 0;
+  font-weight: bold;
+}
+.order-form-input,
+.form-label,
+.form-check-label {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+
+/*formatting the heading to bold*/
+body h1 {
+  font-weight: bold;
+}
+
+/*formatting background color of Order button*/
+.btn {
+  background-color: rgba(15, 21, 178, 0.918);
+}
+
+/*formatting the subheading in brown color*/
+body h6 {
+  margin-bottom: 20px;
+  padding: 10px;
+  color: brown;
+}
+
+/*formatting placeholder font size in address form*/
+input::placeholder {
+  font-size: 13px;
+}
+
+/*formatting the elemtns in html body tag*/
+body {
+  font-family: "Muli", sans-serif;
+  background-color: aliceblue;
+  color: rgba(15, 21, 178, 0.918);
+  line-height: 1.58;
+  font-size: 20px;
+  padding: 70px;
+  height: auto;
+}
+
+/*formatting the container where h1 and h6 are placed*/
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/*number of columns in which checkboxes are organized*/
+ul {
+  column-count: 3;
+  column-gap: 2rem;
+  list-style: none;
+}
+
+/*formatting the border around the checkboxes to only show top and bottom
+and center the content by formatting padding */
+.descriptionDiv {
+  padding-top: 15px;
+  padding-right: 25px;
+  border-style: solid;
+  border-width: 3px 0px 3px 0px;
+}

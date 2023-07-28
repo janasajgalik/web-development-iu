@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"> <!--loading bootstrap. Bootstrap was installed using npm via terminal-->
+    <link rel="stylesheet" type=" text/css" href="index.css"> <!--linking own css file-->
+</head>
+<body>
+    <div class="container"> <!-- container to store the heading and subheading-->
+        <div class="text-center">
+            <h1>Order form for computer components</h1>
+            <h6>Please select the components you need and complete the delivery address</h6>
+        </div>
+    </div>
+
+    <form class="descriptionDiv"> <!--creating this class to add border around checkboxes-->
+        <div class="container-fluid"> <!--container to place individual checkboxes in-->
+            </div class="row justify-content-center">
+                </div class="col-m-6">
+                    <ul>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" value="" id="CPU">
+                            <label class="form-check-label" for="CPU">CPU</label>
+                        </div>
+
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" value="" id="GPU">
+                            <label class="form-check-label" for="GPU">GPU</label>
+                        </div>
+
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" value="" id="Motherboard">
+                            <label class="form-check-label" for="Motherboard">Motherboard</label>
+                        </div>
+
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" value="" id="RAM">
+                            <label class="form-check-label" for="RAM">Memory (RAM)</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="PSU">
+                            <label class="form-check-label" for="PSU">PSU</label>
+                        </div>
+
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="cooling">
+                            <label class="form-check-label" for="cooling">System cooling</label>
+                        </div>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </form>   
+   
+        <div class="row justify-content-center my-5"> <!--row to put columns with address form in-->
+            <div class="col-m-6">
+                <form action=""> <!--form for address - each has placeholder so user knows what to enter-->
+                    <label for="name" class="form-label">Name:</label>
+                    <input
+                         type="name"
+                        id="name"
+                        placeholder="John"
+                        class="form-control"
+                    />
+    
+                    <label for="surname" class="form-label">Surname:</label>
+                    <input
+                        type="surname"
+                        id="surname"
+                        placeholder="Doe"
+                        class="form-control"
+                    />
+    
+                    <label for="email" class="form-label">Email:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="JohnDoe@email.com"
+                        class="form-control"
+                    />
+    
+                    <label for="address" class="form-label">Street and number:</label>
+                    <input
+                        type="address"
+                        id="address"
+                        placeholder="Rue Chapel 3"
+                        class="form-control"
+                    />
+    
+                    <label for="zip" class="form-label">Zip code:</label>
+                    <input
+                        type="zip"
+                        id="zip"
+                        placeholder="9865"
+                        class="form-control"
+                    />
+    
+                    <label for="city" class="form-label">City:</label>
+                    <input
+                        type="city"
+                        id="city"
+                        placeholder="Paris"
+                        class="form-control"
+                    />
+    
+                    <label for="country" class="form-label">Country:</label> <!-- dropdown option to select delivery country-->
+                    <select name="country" id="country" class="form-select", style="font-size: 13px; color: gray;">
+                        <option value="france">France</option>
+                        <option value="germany">Germany</option>
+                        <option value="belgium">Belgium</option>   
+                    </select>
+                </form>
+            </div>
+        </div>
+
+        <div class="text-center"> <!--class where to place button - in center-->
+            <button class="btn btn-primary">Order</button>
+        </div>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script> <!--loading bootstrap-->
+</body>
+</html>
